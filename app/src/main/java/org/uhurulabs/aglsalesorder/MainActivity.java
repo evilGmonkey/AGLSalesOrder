@@ -173,6 +173,13 @@ public class MainActivity extends AppCompatActivity {
         shipmentdate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+               final  String[] months = {
+                        "Jan",
+                        "Feb",
+                        "Mar",
+                        "Apr",
+                        "May"
+                };
                 // calender class's instance and get current date , month and year from calender
                 final Calendar c = Calendar.getInstance();
                 int mYear = c.get(Calendar.YEAR); // current year
@@ -186,13 +193,12 @@ public class MainActivity extends AppCompatActivity {
                             public void onDateSet(DatePicker view, int year,
                                                   int monthOfYear, int dayOfMonth) {
                                 // set day of month , month and year value in the edit text
-                                shipmentdate.setText(dayOfMonth + "/"
-                                        + (monthOfYear + 1) + "/" + year);
-
+                                shipmentdate.setText(dayOfMonth + "/" + months[monthOfYear] + "/" + year);
                             }
                         }, mYear, mMonth, mDay);
                 datePickerDialog.show();
             }
+
         });
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
