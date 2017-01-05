@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">AGL Sales Order</string>
+    <string name="action_settings">Settings</string>
+    <string name="product">apples</string>
+    <string name="quality">0</string>
+    <string name="quantity">0</string>
+
+    <string name="radio_cashew_nuts">Cashew Nuts</string>
+    <string name="radio_cloves">Cloves</string>
+    <string name="radio_green_mung">Green Mung</string>
+    <string name="radio_ground_nuts">Ground Nuts</string>
+    <string name="radio_pigeon_peas">Pigeon Peas</string>
+    <string name="radio_kidney_beans">Kidney Beans</string>
+    <string name="radio_rice">Rice</string>
+    <string name="radio_cotton_bales">Cotton Bales</string>
+    <string name="radio_sesame">Sesame</string>
+    <string name="radio_yellow_gram">Yellow Gram</string>
+
+    <string name="ex_dar">DAR</string>
+    <string name="ex_fob">FOB</string>
+    <string name="ex_cnf">CNF</string>
+    <string name="ex_cif">CIF</string>
+
+    <string name="rate">0.000</string>
+    <string name="pod">DSM</string>
+    <string name="paymentterms">5</string>
+    <string name="commission">0</string>
+    <string name="trader">Samir</string>
+    <string name="buyer">XYZ</string>
+    <string name="enter_date">Enter date...</string>
+    <string name="agent">direct</string>
+</resources>

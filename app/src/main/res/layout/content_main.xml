@@ -1,0 +1,401 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:text="Quantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/quantittylabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Quantity"
+        android:layout_below="@+id/radioProduct"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="Buyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buyerlabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Buyer"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/quality"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="EX"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/exlabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="EX"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/ratelabel"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="POD"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/podlabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="POD"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/exlabel"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="Shipment End Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/shipmentenddatelabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Shipment End Date"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/podlabel"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="Payment Terms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/paymenttermslabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Payment Terms"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/shipmentenddatelabel"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="Agent Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/agentnamelabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Agent Name"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/paymenttermslabel"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="Commission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/commissionlabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Commission"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/agentnamelabel"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <TextView
+        android:text="Trader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/traderlabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Trader"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/commissionlabel"
+        android:layout_alignStart="@+id/qualitylabel" />
+
+    <EditText
+        android:id="@+id/quantity"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity"
+        android:textSize="14sp"
+        android:layout_marginStart="80dp"
+        android:layout_alignBaseline="@+id/quantittylabel"
+        android:layout_alignBottom="@+id/quantittylabel"
+        android:layout_toEndOf="@+id/quantittylabel"
+        android:inputType="number"
+        android:text="0"
+        tools:text="0" />
+    <EditText
+        android:id="@+id/quality"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/quality"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/qualitylabel"
+        android:layout_alignBottom="@+id/qualitylabel"
+        android:layout_alignStart="@+id/quantity"
+        android:inputType="number"
+        tools:text="0"
+        android:text="0" />
+
+    <EditText
+        android:id="@+id/rate"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/rate"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/ratelabel"
+        android:layout_alignStart="@+id/quantity"
+        android:inputType="number"
+        tools:text="0"
+        android:text="0" />
+    <RadioGroup
+        android:id="@+id/radioProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/productlabel"
+        android:layout_alignStart="@+id/quantity">
+
+        <RadioButton
+            android:id="@+id/radio_cashew_nuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_cashew_nuts"
+            android:focusableInTouchMode="true"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_cloves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_cloves" />
+
+        <RadioButton
+            android:id="@+id/radio_green_mung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_green_mung" />
+
+        <RadioButton
+            android:id="@+id/radio_ground_nuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_ground_nuts" />
+
+        <RadioButton
+            android:id="@+id/radio_pigeon_peas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_pigeon_peas" />
+
+        <RadioButton
+            android:id="@+id/radio_kidney_beans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_kidney_beans" />
+
+        <RadioButton
+            android:id="@+id/radio_rice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_rice" />
+
+        <RadioButton
+            android:id="@+id/radio_cotton_bales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_cotton_bales" />
+
+        <RadioButton
+            android:id="@+id/radio_sesame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_sesame" />
+
+        <RadioButton
+            android:id="@+id/radio_yellow_gram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_yellow_gram" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/pod"
+        android:layout_width="51dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/pod"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/podlabel"
+        android:layout_alignStart="@+id/quantity"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:layout_alignBaseline="@+id/shipmentenddatelabel"
+        android:layout_alignStart="@+id/quantity"
+        android:id="@+id/shipmentdate"
+        android:hint="@string/enter_date"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/paymentterms"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/paymentterms"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/paymenttermslabel"
+        android:layout_alignStart="@+id/quantity"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/agent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/agent"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/agentnamelabel"
+        android:layout_alignStart="@+id/quantity"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/commission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/commission"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/commissionlabel"
+        android:layout_alignStart="@+id/quantity"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/trader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/trader"
+        android:textSize="14sp"
+        android:layout_alignBaseline="@+id/traderlabel"
+        android:layout_alignStart="@+id/quantity"
+        android:inputType="text" />
+
+    <TextView
+        android:text="% Purity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/qualitylabel"
+        android:layout_toEndOf="@+id/quality"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="% Advance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/paymenttermslabel"
+        android:layout_toEndOf="@+id/paymentterms"
+        android:layout_marginStart="14dp"
+        android:id="@+id/textView" />
+
+    <TextView
+        android:text="Rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratelabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Rate"
+        android:layout_below="@+id/buyerlabel"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_marginTop="10dp" />
+    <TextView
+        android:text="Quality"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/qualitylabel"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        tools:text="Quality"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/quantity"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="Product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productlabel"
+        tools:text="Product"
+        android:layout_marginTop="42dp"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/quantity" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/EX_Group"
+        android:layout_below="@+id/ratelabel"
+        android:layout_toEndOf="@+id/agentnamelabel"
+        android:checkedButton="@+id/DAR">
+        android:layout_marginStart="8dp" >
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/DAR"
+            android:text="@string/ex_dar"
+            android:layout_weight="0.06" />
+
+        <RadioButton
+            android:text="@string/ex_fob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/FOB"
+            android:layout_weight="0.08" />
+
+        <RadioButton
+            android:text="@string/ex_cnf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CNF"
+            android:layout_weight="0.06" />
+
+        <RadioButton
+            android:text="@string/ex_cif"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CIF"
+            android:layout_weight="0.06" />
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/buyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/buyer"
+        android:inputType="textCapWords"
+        android:layout_below="@+id/quality"
+        android:layout_alignStart="@+id/quality"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>
+</ScrollView>
