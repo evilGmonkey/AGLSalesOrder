@@ -115,7 +115,6 @@ public class MainActivity extends AppCompatActivity {
 
                 EditText qualityText = (EditText) findViewById(R.id.quality);
                 if (qualityText.getText() == null || "".equals(qualityText.getText().toString()))
-                if (quality <=0)
                 {
                     validOrder = false;
                     errMsg.append("Quality must be greater than 0").append("\n");
@@ -133,12 +132,11 @@ public class MainActivity extends AppCompatActivity {
 
                 EditText rateText = (EditText) findViewById(R.id.rate);
                 if (rateText.getText() == null || "".equals(rateText.getText().toString()))
-                if (rate <=0)
                 {
                     validOrder = false;
                     errMsg.append("Rate must be greater than 0").append("\n");
                 } else {
-                    rate = Integer.parseInt(qualityText.getText().toString());
+                    rate = Integer.parseInt(rateText.getText().toString());
                 }
 
 
