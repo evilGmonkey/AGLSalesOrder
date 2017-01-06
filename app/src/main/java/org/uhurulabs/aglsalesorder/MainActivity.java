@@ -65,6 +65,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) throws ActivityNotFoundException {
 
                 Boolean validOrder = true;
+                int quantity = 0;
+                int quality = 0;
+                int rate = 0;
                 int entryLength = 0;
                 StringBuilder errMsg = new StringBuilder("Please make sure you provide: ");
                 errMsg.append("\n");
@@ -98,19 +101,24 @@ public class MainActivity extends AppCompatActivity {
 
 
                 EditText quantityText = (EditText) findViewById(R.id.quantity);
-                int quantity = Integer.parseInt(quantityText.getText().toString());
-                if (quantity <=0)
+                if (quantityText.getText() == null || "".equals(quantityText.getText().toString()))
                 {
                     validOrder = false;
                     errMsg.append("Quantity must be greater than 0").append("\n");
+                } else {
+                   quantity = Integer.parseInt(quantityText.getText().toString());
                 }
 
+
+
                 EditText qualityText = (EditText) findViewById(R.id.quality);
-                int quality = Integer.parseInt(qualityText.getText().toString());
+                if (qualityText.getText() == null || "".equals(qualityText.getText().toString()))
                 if (quality <=0)
                 {
                     validOrder = false;
                     errMsg.append("Quality must be greater than 0").append("\n");
+                } else {
+                    quality = Integer.parseInt(qualityText.getText().toString());
                 }
 
                 EditText buyerText = (EditText) findViewById(R.id.buyer);
@@ -122,11 +130,13 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 EditText rateText = (EditText) findViewById(R.id.rate);
-                int rate = Integer.parseInt(rateText.getText().toString());
+                if (rateText.getText() == null || "".equals(rateText.getText().toString()))
                 if (rate <=0)
                 {
                     validOrder = false;
                     errMsg.append("Rate must be greater than 0").append("\n");
+                } else {
+                    rate = Integer.parseInt(qualityText.getText().toString());
                 }
 
 

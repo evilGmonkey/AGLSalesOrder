@@ -137,7 +137,6 @@
         android:layout_alignBottom="@+id/quantittylabel"
         android:layout_toEndOf="@+id/quantittylabel"
         android:inputType="number"
-        android:text="0"
         tools:text="0" />
     <EditText
         android:id="@+id/quality"
@@ -148,9 +147,7 @@
         android:layout_alignBaseline="@+id/qualitylabel"
         android:layout_alignBottom="@+id/qualitylabel"
         android:layout_alignStart="@+id/quantity"
-        android:inputType="number"
-        tools:text="0"
-        android:text="0" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/rate"
@@ -160,9 +157,7 @@
         android:textSize="14sp"
         android:layout_alignBaseline="@+id/ratelabel"
         android:layout_alignStart="@+id/quantity"
-        android:inputType="number"
-        tools:text="0"
-        android:text="0" />
+        android:inputType="number" />
     <RadioGroup
         android:id="@+id/radioProduct"
         android:layout_width="wrap_content"
@@ -255,7 +250,9 @@
         android:layout_alignStart="@+id/quantity"
         android:id="@+id/shipmentdate"
         android:hint="@string/enter_date"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:focusable="false"
+        android:selectAllOnFocus="true" />
 
     <EditText
         android:id="@+id/paymentterms"
