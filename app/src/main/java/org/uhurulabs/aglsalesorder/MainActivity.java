@@ -29,6 +29,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.util.Calendar;
 
+import static android.provider.AlarmClock.EXTRA_MESSAGE;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -230,6 +232,16 @@ public class MainActivity extends AppCompatActivity {
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
+
+    /** Called when the user clicks the Send button */
+    public void sendMessage(View view) {
+        Intent intent = new Intent(this, createSalesOrder.class);
+        String message = "hello world";
+        intent.putExtra(EXTRA_MESSAGE, message);
+        startActivity(intent);
+
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

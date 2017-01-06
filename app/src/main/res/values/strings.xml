@@ -29,4 +29,8 @@
     <string name="buyer">Joe Bloggs</string>
     <string name="enter_date">Enter date...</string>
     <string name="agent">direct</string>
+
+    <string name="title_activity_create_sales_order">CreateSalesOrder</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
 </resources>

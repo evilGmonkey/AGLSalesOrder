@@ -1,5 +1,6 @@
 <ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
@@ -67,13 +68,13 @@
         android:layout_alignStart="@+id/qualitylabel" />
 
     <TextView
-        android:text="Shipment End Date"
+        android:text="Ship. End Date"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/shipmentenddatelabel"
         android:textAppearance="@style/TextAppearance.AppCompat"
         android:textStyle="normal|bold"
-        tools:text="Shipment End Date"
+        tools:text="Ship. End Date"
         android:layout_marginTop="10dp"
         android:layout_below="@+id/podlabel"
         android:layout_alignStart="@+id/qualitylabel" />
@@ -158,77 +159,7 @@
         android:layout_alignBaseline="@+id/ratelabel"
         android:layout_alignStart="@+id/quantity"
         android:inputType="number" />
-    <RadioGroup
-        android:id="@+id/radioProduct"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:focusable="true"
-        android:layout_marginTop="34dp"
-        android:layout_below="@+id/productlabel"
-        android:layout_alignStart="@+id/quantity">
 
-        <RadioButton
-            android:id="@+id/radio_cashew_nuts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_cashew_nuts"
-            android:focusableInTouchMode="true"
-            android:checked="true" />
-
-        <RadioButton
-            android:id="@+id/radio_cloves"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_cloves" />
-
-        <RadioButton
-            android:id="@+id/radio_green_mung"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_green_mung" />
-
-        <RadioButton
-            android:id="@+id/radio_ground_nuts"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_ground_nuts" />
-
-        <RadioButton
-            android:id="@+id/radio_pigeon_peas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_pigeon_peas" />
-
-        <RadioButton
-            android:id="@+id/radio_kidney_beans"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_kidney_beans" />
-
-        <RadioButton
-            android:id="@+id/radio_rice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_rice" />
-
-        <RadioButton
-            android:id="@+id/radio_cotton_bales"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_cotton_bales" />
-
-        <RadioButton
-            android:id="@+id/radio_sesame"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_sesame" />
-
-        <RadioButton
-            android:id="@+id/radio_yellow_gram"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/radio_yellow_gram" />
-    </RadioGroup>
     <EditText
         android:id="@+id/pod"
         android:layout_width="51dp"
@@ -343,15 +274,6 @@
         android:layout_below="@+id/quantity"
         android:layout_alignParentStart="true" />
 
-    <TextView
-        android:text="Product"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/productlabel"
-        tools:text="Product"
-        android:layout_marginTop="42dp"
-        android:layout_alignParentTop="true"
-        android:layout_toStartOf="@+id/quantity" />
 
     <RadioGroup
         android:layout_width="wrap_content"
@@ -404,6 +326,112 @@
         android:textSize="14sp"
         android:text="Joe Bloggs"
         tools:text="Joe Bloggs" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        app:srcCompat="@drawable/afrisian"
+        android:id="@+id/logo"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:cropToPadding="true"
+        android:layout_marginBottom="334dp"
+        android:layout_above="@+id/quantity"
+        android:layout_alignStart="@+id/textView" />
+
+    <TextView
+        android:text="Product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/productlabel"
+        tools:text="Product"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textStyle="normal|bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/radioProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:layout_marginTop="55dp"
+        android:layout_alignTop="@id/productlabel"
+        android:layout_alignEnd="@+id/textView">
+
+        <RadioButton
+            android:id="@+id/radio_cashew_nuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_cashew_nuts"
+            android:focusableInTouchMode="true"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/radio_cloves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_cloves" />
+
+        <RadioButton
+            android:id="@+id/radio_green_mung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_green_mung" />
+
+        <RadioButton
+            android:id="@+id/radio_ground_nuts"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_ground_nuts" />
+
+        <RadioButton
+            android:id="@+id/radio_pigeon_peas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_pigeon_peas" />
+
+        <RadioButton
+            android:id="@+id/radio_kidney_beans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_kidney_beans" />
+
+        <RadioButton
+            android:id="@+id/radio_rice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_rice" />
+
+        <RadioButton
+            android:id="@+id/radio_cotton_bales"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_cotton_bales" />
+
+        <RadioButton
+            android:id="@+id/radio_sesame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_sesame" />
+
+        <RadioButton
+            android:id="@+id/radio_yellow_gram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_yellow_gram" />
+    </RadioGroup>
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/quantittylabel"
+        android:layout_toEndOf="@+id/ratelabel"
+        android:layout_marginBottom="39dp"
+        android:onClick="sendMessage"
+        android:id="@+id/button2" />
 
 
 </RelativeLayout>
