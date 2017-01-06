@@ -138,6 +138,21 @@ public class MainActivity extends AppCompatActivity {
                     errMsg.append("POD must be 3 characters").append("\n");
                 }
 
+                entryLength = shipmentdate.length();
+                if (entryLength <= 0) {
+                    validOrder = false;
+                    errMsg.append("Shipment Date").append("\n");
+                }
+
+                EditText paymenttermsText = (EditText) findViewById(R.id.paymentterms);
+                int paymentterms = Integer.parseInt(paymenttermsText.getText().toString());
+                if (paymentterms <=0)
+                {
+                    validOrder = false;
+                    errMsg.append("Payment terms must be at least 5%").append("\n");
+                }
+
+
                 if(validOrder)  {
                     Toast.makeText(MainActivity.this, "Creating Email", Toast.LENGTH_SHORT).show();
                     // Setup email

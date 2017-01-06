@@ -242,7 +242,9 @@
         android:textSize="14sp"
         android:layout_alignBaseline="@+id/podlabel"
         android:layout_alignStart="@+id/quantity"
-        android:inputType="text" />
+        android:inputType="text"
+        android:text="DSM"
+        tools:text="DSM" />
 
     <EditText
         android:layout_width="wrap_content"
@@ -263,7 +265,9 @@
         android:textSize="14sp"
         android:layout_alignBaseline="@+id/paymenttermslabel"
         android:layout_alignStart="@+id/quantity"
-        android:inputType="number" />
+        android:inputType="number"
+        android:text="5"
+        tools:text="5" />
 
     <EditText
         android:id="@+id/agent"
@@ -273,7 +277,9 @@
         android:textSize="14sp"
         android:layout_alignBaseline="@+id/agentnamelabel"
         android:layout_alignStart="@+id/quantity"
-        android:inputType="text" />
+        android:inputType="text"
+        android:text="direct"
+        tools:text="direct" />
 
     <EditText
         android:id="@+id/commission"
@@ -283,7 +289,9 @@
         android:textSize="14sp"
         android:layout_alignBaseline="@+id/commissionlabel"
         android:layout_alignStart="@+id/quantity"
-        android:inputType="number" />
+        android:inputType="number"
+        android:text="0"
+        tools:text="0" />
 
     <EditText
         android:id="@+id/trader"
@@ -293,7 +301,9 @@
         android:textSize="14sp"
         android:layout_alignBaseline="@+id/traderlabel"
         android:layout_alignStart="@+id/quantity"
-        android:inputType="text" />
+        android:inputType="text"
+        android:text="Samir"
+        tools:text="Samir" />
 
     <TextView
         android:text="% Purity"
@@ -394,7 +404,9 @@
         android:inputType="textCapWords"
         android:layout_below="@+id/quality"
         android:layout_alignStart="@+id/quality"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:text="Joe Bloggs"
+        tools:text="Joe Bloggs" />
 
 
 </RelativeLayout>
